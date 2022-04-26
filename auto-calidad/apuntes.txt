@@ -1,0 +1,13 @@
+FORMATO URL:
+
+https://www.upm.es/gauss/principal.upm/informes_asignatura/consulta/consulta-informes_asignatura/2020-21/1S/61SI/615000350/2/anexos
+
+
+
+URL FORMATO: /CURSO/1S/61(SI/CT/IW)/codigoAsignatura/2/anexos
+
+HTML LÍNEA 367 INFO ÚTIL
+
+
+BUENA SAUCE:
+https://medium.com/geekculture/web-scraping-tables-in-python-using-beautiful-soup-8bbc31c5803e

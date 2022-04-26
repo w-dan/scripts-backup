@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es-ES" lang="es-ES">
+
+<head>
+	
+	<title>GAUSS - Login</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="Language" content="ES" />
+	
+	<meta name="Description" content=" " />
+	<meta name="keywords" content=" " />
+	<meta name="Copyright" content=" " />
+	
+	<meta http-equiv="imagetoolbar" content="no" />
+	
+	<!-- Estilos Basicos - Navegadores Legacy -->
+	<!--link href="https://$smarty.server.HTTP_X_FORWARDED_HOST/gauss/estilos/apolo_basicos.css" rel="stylesheet" type="text/css" / -->
+	
+	<!-- Estilos - Impresion -->
+	<link rel="stylesheet" type="text/css" href="estilos/print.css" media="print"/>
+	
+	<!-- Estilos - Generales -->
+	<link rel="stylesheet" type="text/css" href="estilos/gauss_login.css" media="screen"/>
+	
+</head>
+
+<body id="login">
+
+<!-- Contenedor -->
+<div id="contenedor">
+	
+	<!-- Politecnica Virtual -->
+	<div id="cabecera_login">
+		<!--h1 id="APOLO_Login" class="reemplazo_imagen"><span class="img"></span><strong>APOLO</strong> <em>APLICACIONES ONLINE ORGANIZATIVAS</em></h1-->
+	</div>
+	
+	<!-- Formulario Login -->
+<form id="form_login" action="https://www.upm.es/gauss/login.upm?redirect=/informes_asignatura/consulta/consulta-informes_asignatura/2020-21/1S/61SI/615000350/2/anexos&failure=12" method="post">
+	<input type="hidden" name="opcion" id="opcion" value="" />
+	<input type="hidden" name="c" id="c" value="" />
+	<input type="hidden" name="filtro_incidencia" id="filtro_incidencia" value="" />
+			<div id="login_error"><h2>Error</h2><p>Su sesi&oacute;n ha expirado. Identif&iacute;quese de nuevo para recuperar la sesi&oacute;n anterior.</p></div>
+			
+		<fieldset id="campo_form_login_datos">
+			
+			<label id="etiqueta_user" for="username" class="required" title="Direcci&oacute;n&nbsp;de&nbsp;correo&nbsp;electr&oacute;nico">
+				<strong>Usuario</strong>
+				<input id="user" name="username" type="text" value="" alt="email" />
+			</label>
+			
+			<label id="etiqueta_pass" for="upasswd" class="required" title="Contrase&ntilde;a&nbsp;de&nbsp;su&nbsp;correo&nbsp;electr&oacute;nico">
+				<strong>Contrase&ntilde;a</strong>
+				<input id="pass" name="upasswd" type="password" value=""/>
+			</label>
+						
+		</fieldset>
+		
+		<fieldset id="campo_form_login_acciones">
+			<input id="form_login_enviar" name="form_login_enviar" type="submit" value="LOGIN" class="boton_login" />
+		</fieldset>
+				
+		<div id="login_tools">
+			<a id="login_mail" href="https://www.upm.es/atencion_usuario/lista.upm?grupos[]=61" target="_blank">Contacto</a>
+			<span class="enlace" id="enlace_olvido" onclick="document.getElementById('opcion').value='olvido';document.getElementById('form_login').submit();">¿Olvid&oacute; su contrase&ntilde;a?</span>
+			<!--<a id="login_faq" href="ayuda_FAQ.upm">Preguntas frecuentes</a>-->
+		</div>
+		
+	</form>
+	<!-- Formulario Cierre -->
+
+	
+</div>
+<!-- Contenedor Cierre -->
+
+<!-- Fondo Pagina -->
+<div id="fondo_login"></div>
+
+</body>
+</html>
